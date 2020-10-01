@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Art Gallery</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+.nav-wrap{
+	background: white;
+    border-bottom: 1px solid #e6e6e6;
+    height: 70px;
+    left: 0;
+    max-width: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 50;
+}
+
+.nav-left{
+	cursor: pointer;
+    line-height: 70px;
+    padding: 0px;
+    text-align: left;
+}
+.nav-left .nav-img, .nav-left .icon {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    width: 25px;
+    z-index: 60;
+}
+@media screen and (max-width: 39.99875em)
+.sidebar {
+    right: 0;
+    width: auto;
+}
+.sidebar {
+    -webkit-animation: ExploreGradient 45s ease infinite !important;
+    -moz-animation: ExploreGradient 45s ease infinite !important;
+    animation: ExploreGradient 45s ease infinite !important;
+    background: linear-gradient(225deg, #b3b7c4, #c4768a, #8176c4, #75adc6, #b0d5c7) !important;
+    background-size: 300% 300% !important;
+    bottom: 0;
+    left: 0;
+    margin: 0px;
+	height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.nav-center {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+}
+
+.nav-right {
+    cursor: pointer;
+    line-height: 70px;
+    padding: 0px;
+    text-align: right;
+}
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.openbtn {
+  font-size: 35px;
+  cursor: pointer;
+  background-color: #111;
+  color: #000000;
+  padding: 5px 10px,0px,0px;
+  border: none;
+  background-color:#ffffff;
+}
+.openbtn:hover {
+  background-color: #ffffff;
+}
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+</style>
+<body class = "bg">
+<div class= "row">
+	<div class = "col-md-2">
+		<nav  class = "nav-wrap">
+			<button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation" data-controller="hidden">
+				
+				<div class="collapse sidebar" id="navbarToggleExternalContent">
+				  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+				  <a href="#">About</a>
+				  <a href="#">Services</a>
+				  <a href="#">Clients</a>
+				  <a href="#">Contact</a>
+				</div>
+				<div id="main" class = "small-2 medium-4 columns nav-left">
+
+				  <span class="navbar-toggler-icon" onclick="openNav()" style ="color:#000000"></span>
+
+				</div>
+				
+			</button>
+		
+	</div>
+	<div class = "col-md-8">
+		<div class="small-8 medium-4 columns nav-center">
+			<a href="#Home">
+				<img src="img/art3.jpg" width="100" height = "100"/>
+			</a>
+		</div>
+	</div>
+	<div class = "col-md-2">
+		<div class = "small-2 medium-4 columns nav-right">
+		<ul>
+		<li class =""><img class = "fa fa-fa-shoppingcart" /></li>
+		<li class =""><img class = "fa fa-fa-shoppingcart"></li>
+		
+		</ul>
+		</div>
+	</div>
+	</nav>
+</div>
+
+<!--<div class = "col-lg-2">
+	<nav  class = "row nav-wrap">
+		<div data-controller="hidden">
+			<div id="mySidebar" class="sidebar">
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+			  <a href="#">About</a>
+			  <a href="#">Services</a>
+			  <a href="#">Clients</a>
+			  <a href="#">Contact</a>
+			</div>
+			<div id="main" class = "small-2 medium-4 columns nav-left">
+			  <span class="openbtn small-2 medium-4 " onclick="openNav()">☰ </span>  
+
+			</div>
+			
+		</div>
+	
+<!-- Header
+	<header class="small-8 medium-4 columns nav-center">
+		<a href="#Home">
+			<img src="img/art3.jpg" width="100" height = "50">
+		</a>
+	</header>
+	<div class="small-2 medium-4 columns nav-right">
+		<ul>
+			<li onclick="window.dispatchEvent(new CustomEvent('toggleHidden', { detail: 'cart' }));" class="hide-for-small-only">
+			<img class="nav-img" src="">
+			</li>
+
+			<li data-controller="hidden" data-action="click->hidden#toggleHidden">
+				  <img id="nav-profile-img" src="https://artistpriyanka.darkroom.tech/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMWRXQ1E9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--e069074afc11fe11c1c44bc06973ae6f4079408f/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9VWTI5dFltbHVaVjl2Y0hScGIyNXpXd2RiQnpvUVlYVjBiMTl2Y21sbGJuUlVXd2M2QzNKbGMybDZaVWtpQ3pjMWVEYzFYZ1k2QmtWRyIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--4bf789890f19ba01e43a13b8c32a9942c0d65c1a/IMG_20200825_192153_754.jpg">
+				<div data-target="hidden.hideable" class="options-popover-nav hide">
+					<div class="nav-carrot carrot-one-from-left"></div>
+					<ul>
+					  <li class="show-for-small-only">
+						<a href="https://checkout.darkroom.tech/">Cart</a>
+					  </li>
+					  <li><a href="https://artistpriyanka.darkroom.tech/admin">Dashboard</a></li>
+					  <li><a href="https://artistpriyanka.darkroom.tech/">My Gallery</a></li>
+					  <li><a rel="nofollow" data-method="delete" href="users/sign_out">Logout</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>	
+</nav >
+<!-- Photo Grid
+<div class="row"> 
+  <div class="column">
+    <img src="/w3images/wedding.jpg" style="width:100%">
+    <img src="/w3images/rocks.jpg"   style="width:100%">
+    <img src="/w3images/falls2.jpg"  style="width:100%">
+    <img src="/w3images/paris.jpg"   style="width:100%">
+    <img src="/w3images/nature.jpg" style="width:100%">
+    <img src="/w3images/mist.jpg"   style="width:100%">
+    <img src="/w3images/paris.jpg"  style="width:100%">
+  </div>
+  <div class="column">
+    <img src="/w3images/underwater.jpg" style="width:100%">
+    <img src="/w3images/ocean.jpg" style="width:100%">
+    <img src="/w3images/wedding.jpg" style="width:100%">
+    <img src="/w3images/mountainskies.jpg" style="width:100%">
+    <img src="/w3images/rocks.jpg" style="width:100%">
+    <img src="/w3images/underwater.jpg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="/w3images/wedding.jpg" style="width:100%">
+    <img src="/w3images/rocks.jpg" style="width:100%">
+    <img src="/w3images/falls2.jpg" style="width:100%">
+    <img src="/w3images/paris.jpg" style="width:100%">
+    <img src="/w3images/nature.jpg" style="width:100%">
+    <img src="/w3images/mist.jpg" style="width:100%">
+    <img src="/w3images/paris.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="/w3images/underwater.jpg" style="width:100%">
+    <img src="/w3images/ocean.jpg" style="width:100%">
+    <img src="/w3images/wedding.jpg" style="width:100%">
+    <img src="/w3images/mountainskies.jpg" style="width:100%">
+    <img src="/w3images/rocks.jpg" style="width:100%">
+    <img src="/w3images/underwater.jpg" style="width:100%">
+  </div>
+</div> -->
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+</body>
+</html>
