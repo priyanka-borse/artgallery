@@ -21,7 +21,7 @@ body, html {
 }
 
 .zoom {
-    padding: 50px;
+    padding: 20px;
     background-color: white;
     transition: transform .2s; /* Animation */
     margin: 0 auto;
