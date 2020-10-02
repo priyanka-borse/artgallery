@@ -1,202 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Art Gallery</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
- <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<style>
-.bg{
-/* The image used */
-background-image:url(img/back.jpeg);
-z-index:50;
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color:#ffffff;
-height: 500px;
-    position: inherit;
-}
-<!-- body, html {
-  height: 50%;
-} -->
-.box{
-
-width:1000px;
-height:500px;
-padding:20px;
-margin :100px auto;
-box-shadow: 5px 5px 5px #aaaaaa;
-background-image:url(img/back1.jpg);
-background-size:cover;
-font-family:sabs-serif;
-color:#336600;
-}
-.column-66 {
-  float: left;
-  width: 66.66666%;
-  padding: 20px;
-}
-
-.column-33 {
-  float: left;
-  width: 33.33333%;
-  padding: 20px;
-}
-@media screen and (max-width: 1000px) {
-  .column-66,
-  .column-33 {
-    width: 100%;
-    text-align: center;
-  }
-  img {
-    margin: auto;
-  }
-}
-.row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-.column {
-  -ms-flex: 25%; /* IE10 */
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-.zoom {
-  padding: 50px;
-  background-color: white;
-  transition: transform .2s; /* Animation */
-  margin: 0 auto;
-}
-
-.zoom:hover {
-  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
-.navbar-light .navbar-nav .nav-link {
-font-size:19px;
-color:#336600;
-font-family: myFirstFont;
-text-decoration-color: #336600;
-}
-@font-face {
-  font-family: myFirstFont;
-  src: url(Archio/Archivo-Regular.ttf);
-}
-
-div {
-  
-}
-
-</style>
-
+    <title>Art Gallery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body class = "">
-		<div class = "bg ">
-			
-			<nav class = "navbar navbar-expand-md navbar-light  sticky-top ">
-			<div class = "container-fluid ">
-				<a class= "navbar-brand" href = "#"><img src ="img/logo.jpg"></a>
-				<button class = "navbar-toggler" type= "button" data-toggle = "collapse" data-target = "#navbarResponsive"> 
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class = "collapse navbar-collapse clr" id = "navbarResponsive" >
-					<ul class = "navbar-nav ml-auto" >
-						<li class = "nav-item active">
-							<a class = "nav-link" href = "#" >Home</a>
-						</li>
-						<li class = "nav-item ">
-							<a class = "nav-link" href = "portfolio.html">Portfolio</a>
-						</li>
-						<li class = "nav-item ">
-							<a class = "nav-link" href = "#">About Us</a>
-						</li>
-						<li class = "nav-item ">
-							<a class = "nav-link" href = "#">Contact Us</a>
-						</li>
-					<ul>
-				</div>
-				
-			</div>
-			</nav>
-		</div>
-		<div class = "container">
-			<div class="row">
-				<div class = "column-66 ">
-				 <h1 class="xlarge-font"><b>The App</b></h1>
-					  <h1 class="large-font" style="color:MediumSeaGreen;"><b>How does it work?</b></h1>
-					  <p><span style="font-size:36px">My Art Gallery.</span>
-					  You should buy this app because lorem ipsum consectetur 
-								adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>						
-				</div>
-				<div class ="column-33">
-				<img src="img/howTouse.jpeg" width="500" height="250">
-				</div>
-			</div>
-		</div>
-		<h1 class="large-font text-center" style="color:MediumSeaGreen;"><b>Sketches</b></h1>
-		<div class="row">
-		
-		  <div class="column">
-			<img src="img/img6.jpg" alt="Snow"  class='img-thumbnail zoom' style = "width:100%">
-		  </div>
-		  <div class="column">
-			<img src="img/img2.jpg" alt="Forest" style="width:100%" class='img-thumbnail zoom'>
-		  </div>
-		  <div class="column">
-			<img src="img/img3.jpg" alt="Mountains" style="width:100%" class='img-thumbnail zoom'>
-		  </div>
-		  <div class="column">
-			<img src="img/img5.jpg" alt="Mountains" style="width:100%" class='img-thumbnail zoom'>
-		  </div>
-		</div>
-	<div class="container-fuild text-center" style = "">
-		<div class="jumbotron" style = "background-color:#003366;"> 
-			<div style = "color:#ffffff">
-				<p style = "font-size:50px;font-family:serif"> Let’s get social</p>
+<body>
+<div id="header" class="container-fluid">
+    <nav class="navbar navbar-expand-md navbar-light sticky-top">
+        <a class="navbar-brand" href="#">Art Gallery</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<section id="middle-content" class="container-fluid">
+    <div class="row">
+        <div class="col-lg-6">
+            <h1 class="xlarge-font"><b>The App</b></h1>
+            <h1 class="large-font" style="color:MediumSeaGreen;"><b>How does it work?</b></h1>
+            <h3>My Art Gallery</h3>
+            <p>
+                You should buy this app because lorem ipsum consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="col-lg-6">
+            <img class="img-fluid" src="img/howTouse.jpeg">
+        </div>
+    </div>
+    <br>
+    <h1 class="text-center" style="color:MediumSeaGreen;">Sketches</h1><br>
+    <div class="row">
+        <div class="col-lg-3">
+            <img src="img/img6.jpg" alt="Snow" class="img-thumbnail zoom">
+        </div>
+        <div class="col-lg-3">
+            <img src="img/img2.jpg" alt="Forest" class="img-thumbnail zoom">
+        </div>
+        <div class="col-lg-3">
+            <img src="img/img3.jpg" alt="Mountains" class="img-thumbnail zoom">
+        </div>
+        <div class="col-lg-3">
+            <img src="img/img5.jpg" alt="Mountains" class="img-thumbnail zoom">
+        </div>
+    </div>
+</section>
 
-			
-					<p>ART</br>
-					
-					copyright@2020</p>
-			</div>
-		 
-		</div>
-	</div>				
-			
+<footer>
+    <div class="text-center">
+        <p style="font-size:50px;font-family:serif"> Let’s get social</p>
+        <p>ART Gallery</br>
+            copyright@2020</p>
+    </div>
+</footer>
 
-	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

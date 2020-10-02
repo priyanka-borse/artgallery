@@ -1,0 +1,41 @@
+body, html {
+    height: 50%;
+    font-family: "Courier New", Courier, monospace;
+}
+
+#header {
+    background: url(../img/back.jpeg) no-repeat center center fixed;
+    z-index: 50;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    height: 500px;
+    background-size: 100% 100%;
+}
+
+/*----------------------------------------------|
+|              middle-content                   |
+|-----------------------------------------------*/
+#middle-content {
+    padding: 20px 50px 20px 100px;
+}
+
+.zoom {
+    padding: 50px;
+    background-color: white;
+    transition: transform .2s; /* Animation */
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+/*----------------------------------------------|
+|                    footer                     |
+|-----------------------------------------------*/
+footer {
+    height: 200px;
+    color: #ffffff;
+    background-color: #003366;
+}
