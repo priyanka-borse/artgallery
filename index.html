@@ -3,12 +3,13 @@
 <head>
     <title>Art Gallery</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+	<!-- <script type ="javascript" src = "js/jslib.js"></script> -->
 </head>
 <body>
-<div id="header" class="container-fluid">
+<div id="" class="container-fluid">
     <nav class="navbar navbar-expand-md navbar-light sticky-top">
         <a class="navbar-brand" href="#">Art Gallery</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
@@ -24,15 +25,66 @@
                     <a class="nav-link" href="portfolio.html">Portfolio</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link" href="carousel.html">carousel</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="#">Contact Us</a>
+                    <a class="nav-link" href="port.html">Gallery</a>
                 </li>
             </ul>
         </div>
     </nav>
 </div>
+<!--Slider code-->
+<section class="carousel slide" data-ride="carousel" id="postsCarousel">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-md-right lead">
+                <a class="btn btn-outline-secondary prev" href="" title="go back"><i class="fa fa-lg fa-chevron-left"></i></a>
+                <a class="btn btn-outline-secondary next" href="" title="more"><i class="fa fa-lg fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="container p-t-0 m-t-2 carousel-inner">
+        <div class="d-flex carousel-item active m-t-0">
+            <div class="col-md-4 p-2">
+                <div class="Column">
+                    
+                        <img class="" src="img/img1.jpg" alt="Carousel 1" width = "300" height="400">
+                    
+                </div>
+            </div>
+            <div class="col-md-4 p-2">
+                <div class="Column">
+                    
+                        <img class="" src="img/img2.jpg" alt="Carousel 2" width = "300" height="400">
+                   
+                </div>
+            </div>
+            <div class="col-md-4 p-2">
+                <div class="Column">
+                        <img class="" src="img/img3.jpg" alt="Carousel 3" width = "300" height="400">
+                </div>
+            </div>
+        </div>
+        <div class="d-flex carousel-item m-t-0">
+            <div class="col-md-4 p-2">
+                <div class="Column">
+                        <img class="" src="img/img4.jpg" alt="Carousel 4" width = "300" height="400">
+                </div>
+            </div>
+            <div class="col-md-4 p-2">
+                <div class="Column">
+                        <img class="" src="img/img5.jpg" alt="Carousel 5" width = "300" height="400">
+                </div>
+            </div>
+            <div class="col-md-4  p-2 Fade Wow">
+                <div class="Column">
+                        <img class="" src="img/img6.jpg" alt="Carousel 6" width = "300" height="400">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <section id="middle-content" class="container-fluid">
     <div class="row">
         <div class="col-lg-6">
@@ -74,8 +126,22 @@
             copyright@2020</p>
     </div>
 </footer>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
+<!--Slider scripting code-->
+
+<script>
+(function($) {
+    "use strict";
+
+    // manual carousel controls
+    $('.next').click(function(){ $('.carousel').carousel('next');return false; });
+    $('.prev').click(function(){ $('.carousel').carousel('prev');return false; });
+    
+})(jQuery);
+</script>
+
+
+ 
+ </body>
 </html>
