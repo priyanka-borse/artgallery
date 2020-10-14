@@ -23,7 +23,7 @@
                     <a class="nav-link" href="#">Home</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    <a class="nav-link" href="carousel.html">Portfolio</a>
                 </li>
                 <li class="nav-item ">
                     <a class="nav-link" href="carousel.html">carousel</a>
@@ -37,15 +37,20 @@
 </div>
 <!--Slider code-->
 <section class="carousel slide" data-ride="carousel" id="postsCarousel">
-    <div class="container">
+  <ul class="carousel-indicators">
+    <li data-target="#postsCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#postsCarousel" data-slide-to="1"></li>
+  </ul> 
+
+<!-- 	<div class="container">
         <div class="row">
-            <div class="col-md-12 text-md-right lead">
-                <a class="btn btn-outline-secondary prev" href="" title="go back"><i class="fa fa-lg fa-chevron-left"></i></a>
-                <a class="btn btn-outline-secondary next" href="" title="more"><i class="fa fa-lg fa-chevron-right"></i></a>
+            <div class="col-md-12 text-md-center lead">
+                <a class="btn btn-outline-secondary prev" href="#postsCarousel" title="go back"><i class="fa fa-lg fa-chevron-left"></i></a>
+                <a class="btn btn-outline-secondary next" href="#postsCarousel" title="more"><i class="fa fa-lg fa-chevron-right"></i></a>
             </div>
         </div>
-    </div>
-    <div class="container p-t-0 m-t-2 carousel-inner">
+    </div> -->
+    <div class="container p-t-0 m-t-3 carousel-inner">
         <div class="d-flex carousel-item active m-t-0">
             <div class="col-md-4 p-2">
                 <div class="Column">
