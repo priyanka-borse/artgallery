@@ -34,7 +34,7 @@ body, html {
 /* prevent flicker during transition */
 .carousel-inner>.row-equal.active.left, 
 .carousel-inner>.row-equal.active.right {
-    opacity: 0.5;
+    opacity: 0.2;
     display: flex;
 }
 
