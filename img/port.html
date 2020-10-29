@@ -1,0 +1,340 @@
+
+<html lang="en">
+<head>
+    <title>Art Gallery</title>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/portstyle.css">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+	<!-- <script type ="javascript" src = "js/jslib.js"></script> -->
+</head>
+<body>
+<div id="" class="container-fluid">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top" style = "color:#ffffff">
+        <a class="navbar-brand" href="index.html">Art Gallery</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+				<li class="nav-item active">
+                    <a class="nav-link" href="port.html">Portfolio</a>
+
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">Home-Delivary-art</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<div class="main">
+
+<h1>PORTFOLIO</h1>
+<hr>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('Pencil')"> Pencil sketch</button>
+  <button class="btn" onclick="filterSelection('Graphite')"> Graphite</button>
+  <button class="btn" onclick="filterSelection('Acraylic')"> Acraylic</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row" style = "background-color:#000000">
+  <div class="column Pencil">
+    <div class="content">
+      <img src="img/img14.jpeg" alt="Mountains" style="width:100%" id = "myImg1" class = "clsImg">
+    </div>
+	<div id="myModal1" class="modal">
+	  <span class="close">&times;</span>
+	  <img class="modal-content" id="img01">
+	  <div id="caption"></div>
+	</div>	
+  </div>
+  <div class="column Pencil">
+    <div class="content">
+    <img src="img/img2.jpg" alt="Lights" style="width:100%" id = "myImg2" class = "clsImg">
+	</div>
+	<div id="myModal2" class="modal">
+	  <span class="close">&times;</span>
+	  <img class="modal-content" id="img02">
+	  <div id="caption"></div>
+	</div>	
+
+  </div>
+  <div class="column Pencil">
+    <div class="content">
+    <img src="img/img3.jpg" alt="Pencil" style="width:100%" id = "myImg3" class = "clsImg">
+    </div>
+	<div id="myModal3" class="modal">
+	  <span class="close">&times;</span>
+	  <img class="modal-content" id="img03">
+	  <div id="caption"></div>
+	</div>
+  </div>
+  <div class="column Pencil">
+    <div class="content">
+    <img src="img/img10.jpg" alt="Pencil" style="width:100%" id = "myImg3" class = "clsImg">
+    </div>
+	<div id="myModal3" class="modal">
+	  <span class="close">&times;</span>
+	  <img class="modal-content" id="img03">
+	  <div id="caption"></div>
+	</div>
+  </div>
+  
+  <div class="column Graphite">
+    <div class="content">
+      <img src="img/img6.jpg" alt="Car" style="width:100%" id = "myImg4" class = "clsImg">
+    </div>
+	<div id="myModal4" class="modal">
+	  <span class="close">&times;</span>
+	  <img class="modal-content" id="img04">
+	  <div id="caption"></div>
+	</div>
+  </div>
+  <div class="column Graphite">
+    <div class="content">
+    <img src="img/img13.jpeg" alt="Car" style="width:100%" id = "myImg5" class = "clsImg">
+    </div>
+	<div id="myModal5" class="modal">
+	  <span class="close">&times;</span>
+	  <img class="modal-content" id="img05">
+	  <div id="caption"></div>
+	</div> 
+ </div>
+  <div class="column Graphite">
+    <div class="content">
+    <img src="img/img12.jpeg" alt="Car" style="width:100%" id = "myImg6" class = "clsImg">
+    </div>
+	<div id="myModal6" class="modal">
+	  <span class="close">&times;</span>
+	  <img class="modal-content" id="img06">
+	  <div id="caption"></div>
+	</div> 
+ </div>
+
+  <div class="column Acraylic">
+    <div class="content">
+      <img src="img/img4.jpg" alt="Car" style="width:100%" id = "myImg7" class = "clsImg">
+    </div>
+	<div id="myModal7" class="modal">
+	  <span class="close">&times;</span>
+	  <img class="modal-content" id="img07">
+	  <div id="caption"></div>
+	</div>
+  </div>
+  <div class="column Acraylic">
+    <div class="content">
+    <img src="img/img7.jpg" alt="Car" style="width:100%" id = "myImg8" class = "clsImg">
+    </div>
+  	<div id="myModal8" class="modal">
+	  <span class="close">&times;</span>
+	  <img class="modal-content" id="img08">
+	  <div id="caption"></div>
+	</div>
+  </div>
+  
+  <div class="column Acraylic">
+    <div class="content">
+    <img src="img/img9.jpg" alt="Car" style="width:100%" id = "myImg9" class = "clsImg">
+    </div>
+	<div id="myModal9" class="modal">
+	  <span class="close">&times;</span>
+	  <img class="modal-content" id="img09">
+	  <div id="caption"></div>
+	</div> 
+ </div>
+  <div class="column Acraylic">
+    <div class="content">
+    <img src="img/img11.jpeg" alt="Car" style="width:100%" id = "myImg10" class = "clsImg" >
+    </div>
+	<div id="myModal10" class="modal">
+	  <span class="close">&times;</span>
+	  <img class="modal-content" id="img10">
+	  <div id="caption"></div>
+	</div> 
+ </div>
+  <div class="column Acraylic">
+    <div class="content">
+    <img src="img/img15.jpeg" alt="Car" style="width:100%" id = "myImg10" class = "clsImg" >
+    </div>
+	<div id="myModal10" class="modal">
+	  <span class="close">&times;</span>
+	  <img class="modal-content" id="img10">
+	  <div id="caption"></div>
+	</div> 
+ </div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+<footer>
+    <div class="text-center">
+        <p style="font-size:50px;font-family:serif"> Let’s get social</p>
+        <p>ART Gallery</br>
+            copyright@2020</p>
+    </div>
+</footer>
+<script>
+//Script for porfolio//
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+//for modal img//
+var modal1 = document.getElementById("myModal1");
+var modal2 = document.getElementById("myModal2");
+var modal3 = document.getElementById("myModal3");
+var modal4 = document.getElementById("myModal4");
+var modal5 = document.getElementById("myModal5");
+var modal6 = document.getElementById("myModal6");
+var modal7 = document.getElementById("myModal7");
+var modal8 = document.getElementById("myModal8");
+var modal9 = document.getElementById("myModal9");
+var modal10 = document.getElementById("myModal10");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img1 = document.getElementById("myImg1");
+var img2 = document.getElementById("myImg2");
+var img3 = document.getElementById("myImg3");
+var img4 = document.getElementById("myImg4");
+var img5 = document.getElementById("myImg5");
+var img6 = document.getElementById("myImg6");
+var img7 = document.getElementById("myImg7");
+var img8 = document.getElementById("myImg8");
+var img9 = document.getElementById("myImg9");
+var img10 = document.getElementById("myImg10");
+var modalImg1 = document.getElementById("img01");
+var modalImg2 = document.getElementById("img02");
+var modalImg3 = document.getElementById("img03");
+var modalImg4 = document.getElementById("img04");
+var modalImg5 = document.getElementById("img05");
+var modalImg6 = document.getElementById("img06");
+var modalImg7 = document.getElementById("img07");
+var modalImg8 = document.getElementById("img08");
+var modalImg9 = document.getElementById("img09");
+var modalImg10 = document.getElementById("img10");
+var captionText = document.getElementById("caption");
+img1.onclick = function(){
+  modal1.style.display = "block";
+   modalImg1.src = this.src;
+   captionText.innerHTML = this.alt;
+
+}
+img2.onclick = function(){
+  modal2.style.display = "block";
+   modalImg2.src = this.src;
+   captionText.innerHTML = this.alt;
+
+}
+img3.onclick = function(){
+  modal3.style.display = "block";
+   modalImg3.src = this.src;
+   captionText.innerHTML = this.alt;
+
+}
+img4.onclick = function(){
+  modal4.style.display = "block";
+   modalImg4.src = this.src;
+   captionText.innerHTML = this.alt;
+
+}
+img5.onclick = function(){
+  modal5.style.display = "block";
+   modalImg5.src = this.src;
+   captionText.innerHTML = this.alt;
+
+}
+img6.onclick = function(){
+  modal6.style.display = "block";
+   modalImg6.src = this.src;
+   captionText.innerHTML = this.alt;
+
+}
+img7.onclick = function(){
+  modal7.style.display = "block";
+   modalImg7.src = this.src;
+   captionText.innerHTML = this.alt;
+
+}
+img8.onclick = function(){
+  modal8.style.display = "block";
+   modalImg8.src = this.src;
+   captionText.innerHTML = this.alt;
+
+}
+img9.onclick = function(){
+  modal9.style.display = "block";
+   modalImg9.src = this.src;
+   captionText.innerHTML = this.alt;
+ 
+}
+img10.onclick = function(){
+  modal9.style.display = "block";
+   modalImg9.src = this.src;
+   captionText.innerHTML = this.alt;
+ 
+}
+
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
