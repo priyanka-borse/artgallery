@@ -30,7 +30,7 @@
                     <a class="nav-link" href="#">Contact</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="#">Delivary art</a>
+                    <a class="nav-link" href="#">Home-Delivary-art</a>
                 </li>
             </ul>
         </div>
@@ -43,16 +43,16 @@
 
 <div id="myBtnContainer">
   <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-  <button class="btn" onclick="filterSelection('nature')"> Pencil sketch</button>
-  <button class="btn" onclick="filterSelection('cars')"> Graphite</button>
-  <button class="btn" onclick="filterSelection('people')"> Acraylic</button>
+  <button class="btn" onclick="filterSelection('Pencil')"> Pencil sketch</button>
+  <button class="btn" onclick="filterSelection('Graphite')"> Graphite</button>
+  <button class="btn" onclick="filterSelection('Acraylic')"> Acraylic</button>
 </div>
 
 <!-- Portfolio Gallery Grid -->
 <div class="row" style = "background-color:#000000">
-  <div class="column nature">
+  <div class="column Pencil">
     <div class="content">
-      <img src="img/img2.jpg" alt="Mountains" style="width:100%" id = "myImg1" class = "clsImg">
+      <img src="img/img1.jpg" alt="Mountains" style="width:100%" id = "myImg1" class = "clsImg">
       <h4>Mountains</h4>
       <p>Lorem ipsum dolor..</p>
     </div>
@@ -62,7 +62,7 @@
 	  <div id="caption"></div>
 	</div>	
   </div>
-  <div class="column nature">
+  <div class="column Pencil">
     <div class="content">
     <img src="img/img2.jpg" alt="Lights" style="width:100%" id = "myImg2" class = "clsImg">
       <h4>Lights</h4>
@@ -75,9 +75,21 @@
 	</div>	
 
   </div>
-  <div class="column nature">
+  <div class="column Pencil">
     <div class="content">
-    <img src="img/img2.jpg" alt="Nature" style="width:100%" id = "myImg3" class = "clsImg">
+    <img src="img/img3.jpg" alt="Pencil" style="width:100%" id = "myImg3" class = "clsImg">
+      <h4>Forest</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+	<div id="myModal3" class="modal">
+	  <span class="close">&times;</span>
+	  <img class="modal-content" id="img03">
+	  <div id="caption"></div>
+	</div>
+  </div>
+  <div class="column Pencil">
+    <div class="content">
+    <img src="img/img10.jpg" alt="Pencil" style="width:100%" id = "myImg3" class = "clsImg">
       <h4>Forest</h4>
       <p>Lorem ipsum dolor..</p>
     </div>
@@ -88,9 +100,9 @@
 	</div>
   </div>
   
-  <div class="column cars">
+  <div class="column Graphite">
     <div class="content">
-      <img src="img/img3.jpg" alt="Car" style="width:100%" id = "myImg4" class = "clsImg">
+      <img src="img/img6.jpg" alt="Car" style="width:100%" id = "myImg4" class = "clsImg">
       <h4>Retro</h4>
       <p>Lorem ipsum dolor..</p>
     </div>
@@ -100,9 +112,9 @@
 	  <div id="caption"></div>
 	</div>
   </div>
-  <div class="column cars">
+  <div class="column Graphite">
     <div class="content">
-    <img src="img/img3.jpg" alt="Car" style="width:100%" id = "myImg5" class = "clsImg">
+    <img src="img/img13.jpeg" alt="Car" style="width:100%" id = "myImg5" class = "clsImg">
       <h4>Fast</h4>
       <p>Lorem ipsum dolor..</p>
     </div>
@@ -112,9 +124,9 @@
 	  <div id="caption"></div>
 	</div> 
  </div>
-  <div class="column cars">
+  <div class="column Graphite">
     <div class="content">
-    <img src="img/img6.jpg" alt="Car" style="width:100%" id = "myImg6" class = "clsImg">
+    <img src="img/img12.jpeg" alt="Car" style="width:100%" id = "myImg6" class = "clsImg">
       <h4>Classic</h4>
       <p>Lorem ipsum dolor..</p>
     </div>
@@ -125,9 +137,9 @@
 	</div> 
  </div>
 
-  <div class="column people">
+  <div class="column Acraylic">
     <div class="content">
-      <img src="img/img2.jpg" alt="Car" style="width:100%" id = "myImg7" class = "clsImg">
+      <img src="img/img4.jpg" alt="Car" style="width:100%" id = "myImg7" class = "clsImg">
       <h4>Girl</h4>
       <p>Lorem ipsum dolor..</p>
     </div>
@@ -137,9 +149,9 @@
 	  <div id="caption"></div>
 	</div>
   </div>
-  <div class="column people">
+  <div class="column Acraylic">
     <div class="content">
-    <img src="img/img3.jpg" alt="Car" style="width:100%" id = "myImg8" class = "clsImg">
+    <img src="img/img7.jpg" alt="Car" style="width:100%" id = "myImg8" class = "clsImg">
       <h4>Man</h4>
       <p>Lorem ipsum dolor..</p>
     </div>
@@ -150,15 +162,27 @@
 	</div>
   </div>
   
-  <div class="column people">
+  <div class="column Acraylic">
     <div class="content">
-    <img src="img/img5.jpg" alt="Car" style="width:100%" id = "myImg9" class = "clsImg">
+    <img src="img/img9.jpg" alt="Car" style="width:100%" id = "myImg9" class = "clsImg">
       <h4>Woman</h4>
       <p>Lorem ipsum dolor..</p>
     </div>
 	<div id="myModal9" class="modal">
 	  <span class="close">&times;</span>
 	  <img class="modal-content" id="img09">
+	  <div id="caption"></div>
+	</div> 
+ </div>
+  <div class="column Acraylic">
+    <div class="content">
+    <img src="img/img11.jpeg" alt="Car" style="width:100%" id = "myImg10" class = "clsImg" >
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+	<div id="myModal10" class="modal">
+	  <span class="close">&times;</span>
+	  <img class="modal-content" id="img10">
 	  <div id="caption"></div>
 	</div> 
  </div>
@@ -229,6 +253,7 @@ var modal6 = document.getElementById("myModal6");
 var modal7 = document.getElementById("myModal7");
 var modal8 = document.getElementById("myModal8");
 var modal9 = document.getElementById("myModal9");
+var modal10 = document.getElementById("myModal10");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var img1 = document.getElementById("myImg1");
@@ -240,6 +265,7 @@ var img6 = document.getElementById("myImg6");
 var img7 = document.getElementById("myImg7");
 var img8 = document.getElementById("myImg8");
 var img9 = document.getElementById("myImg9");
+var img10 = document.getElementById("myImg10");
 var modalImg1 = document.getElementById("img01");
 var modalImg2 = document.getElementById("img02");
 var modalImg3 = document.getElementById("img03");
@@ -249,6 +275,7 @@ var modalImg6 = document.getElementById("img06");
 var modalImg7 = document.getElementById("img07");
 var modalImg8 = document.getElementById("img08");
 var modalImg9 = document.getElementById("img09");
+var modalImg10 = document.getElementById("img10");
 var captionText = document.getElementById("caption");
 img1.onclick = function(){
   modal1.style.display = "block";
@@ -304,6 +331,12 @@ img9.onclick = function(){
    captionText.innerHTML = this.alt;
  
 }
+img10.onclick = function(){
+  modal9.style.display = "block";
+   modalImg9.src = this.src;
+   captionText.innerHTML = this.alt;
+ 
+}
 
 
 // Get the <span> element that closes the modal
@@ -311,7 +344,7 @@ var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() { 
-  modal1.style.display = "none";
+  modal.style.display = "none";
 }
 </script>
 
